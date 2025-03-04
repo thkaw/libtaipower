@@ -17,10 +17,10 @@ tests_require = [
 
 if __name__ == "__main__":
     setuptools.setup(
-        name="libtaipower",
+        name="libtaipower_2025",
         version=__version__,
         author=__author__,
-        author_email="qqaatw@gmail.com",
+        author_email="ar801112usa@gmail.com",
         description="A library for retrieving Taipower data.",
         long_description=long_description,
         long_description_content_type="text/markdown",
