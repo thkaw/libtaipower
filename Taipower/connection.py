@@ -103,7 +103,7 @@ class TaipowerConnection:
         return message, response_json
 
     async def _async_send(self, api_name, client=None, **kwargs):
-        c = httpx.AsyncClient(proxies=self._proxies) if client is None else client
+        c = httpx.AsyncClient(proxy=self._proxies) if client is None else client
         headers = kwargs.pop("headers") if "headers" in kwargs else self._generate_headers()
         timeout = kwargs.pop("timeout") if "timeout" in kwargs else 10.0
         req = await c.post(
